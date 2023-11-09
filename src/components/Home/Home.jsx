@@ -1,6 +1,8 @@
 import React from "react";
 import "./home.css";
 import Mansvg from "../../assets/man.svg";
+import { Facebook, GitHub, Twitter, YouTube } from "@mui/icons-material";
+// import { FacebookIcon, TwitterIcon } from "@mui/icons-material/Facebook";
 export default function Home() {
   return (
     <div id="main">
@@ -16,6 +18,12 @@ export default function Home() {
         </div>
         <div className="intro-img">
           <img src={Mansvg} alt="" />
+        </div>
+        <div className="social-media-icons">
+          <Facebook />
+          <Twitter />
+          <YouTube />
+          <GitHub />
         </div>
       </div>
     </div>
