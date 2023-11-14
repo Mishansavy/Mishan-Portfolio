@@ -1,3 +1,4 @@
+// import React, { useRef, props } from "react";
 import "./home.css";
 // Images and svg
 import Mansvg from "../../assets/man.svg";
@@ -12,10 +13,10 @@ import {
   Computer,
   MovieFilter,
 } from "@mui/icons-material";
-export default function Home() {
+export default function Home({ homeRef, infoRef, serviceRef, skillsRef }) {
   return (
     <div id="main">
-      <div className="hero-section">
+      <div className="hero-section" ref={homeRef}>
         <div className="intro">
           <p>Hello,I’m</p>
           <h1>Mishan Raj Shah</h1>
@@ -36,7 +37,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="info-area">
+      <div className="info-area" ref={infoRef}>
         <div className="info-image">
           <img src={Mishan} alt="" />
         </div>
@@ -69,7 +70,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="service-area">
+      <div className="service-area" ref={serviceRef}>
         <div className="service-heading">
           <p className="ServicetopHeading">Service</p>
           <h1 className="ServicemiddleHeading">What I Do</h1>
@@ -78,24 +79,25 @@ export default function Home() {
           </p>
         </div>
         <div className="boxes">
-          <box-1>
-            <Computer />
+          <div className="box-1">
+            <Computer className="service-icon1" />
             <h2>Web Development</h2>
-          </box-1>
-          <box-2>
-            <Compare />
+          </div>
+          <div className="box-2">
+            <Compare className="service-icon2" />
             <h2>Video Editing</h2>
-          </box-2>
-          <box-3>
-            <MovieFilter />
+          </div>
+          <div className="box-3">
+            <MovieFilter className="service-icon3" />
             <h2>Content Creation</h2>
-          </box-3>
+          </div>
         </div>
       </div>
-      <div className="Skills-Area">
+
+      <div className="Skills-Area" ref={skillsRef}>
         <div className="skillHeading">
-          <p className="SkillsTopHeading">Skills</p>
-          <h2 className="SkillsMiddleHeading">Why Choose me</h2>
+          <p className="TopHeading">Skills</p>
+          <h2 className="middleHeading">Why Choose me</h2>
           <p className="Skills Des">
             I’ve dedicated time and unwavering commitment to mastering my
             skills, ensuring exceptional results. With a strong foundation and a
