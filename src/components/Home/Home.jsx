@@ -1,4 +1,3 @@
-import React from "react";
 import "./home.css";
 // Images and svg
 import Mansvg from "../../assets/man.svg";
@@ -72,9 +71,9 @@ export default function Home() {
       </div>
       <div className="service-area">
         <div className="service-heading">
-          <p className="topHeading">Service</p>
-          <h1 className="middleHeading">What I Do</h1>
-          <p className="bottomHeading">
+          <p className="ServicetopHeading">Service</p>
+          <h1 className="ServicemiddleHeading">What I Do</h1>
+          <p className="ServicebottomHeading">
             I’m Specializes in Web Development, video Editing, Content Creation.
           </p>
         </div>

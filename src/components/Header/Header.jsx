@@ -1,4 +1,4 @@
-import React from "react";
+import Home from "../Home/Home";
 import headinglogo from "../../assets/faviconmishan.png";
 import "./header.css";
 export default function Header() {
@@ -15,6 +15,7 @@ export default function Header() {
         <a href="#">Blog</a>
         <a href="#">Contact</a>
       </div>
+      <Home />
     </div>
   );
 }
