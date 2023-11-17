@@ -107,27 +107,6 @@ export default function Home({ homeRef, infoRef, serviceRef, skillsRef }) {
           </div>
         </div>
         <ProgressBar />
-        {/* <div className="percentage">
-        <div className="leftsideper">
-          <div className="leftsideText1">Html 100%</div>
-          <div className="reactjsdiv">
-            <span className="textreactjs">ReactJs</span>
-            <span className="reactpercentage">40%</span>
-          </div>
-          <div className="leftsideText2">CSS 95%</div>
-          <div className="leftsideText3">JavaScript 45%</div>
-        </div>
-        <div className="Middlesideper">
-          <div className="MiddlesideText1">Wordpress 100%</div>
-          <div className="MiddlesideText2">Elementor 98%</div>
-          <div className="MiddlesideText3">WooCommerce 45%</div>
-        </div>
-        <div className="Rightsideper">
-          <div className="RightsideText1">Adobe Premiere 95%</div>
-          <div className="RightsideText2">Content Writing 75%</div>
-          <div className="RightsideText3">Fliming 70%</div>
-        </div>
-      </div> */}
       </div>
       <div className="Footer">
         <p>Copyright 2023 Mishan Raj Shah</p>

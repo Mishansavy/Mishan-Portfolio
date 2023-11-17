@@ -1,42 +1,69 @@
 import React from "react";
 
-export default function ProgressBar() {
-  const Progress_bar = ({ bgcolor, progress, height }) => {
-    const Parentdiv = {
-      height: height,
-      width: "100%",
-      backgroundColor: "whitesmoke",
-      borderRadius: 40,
-      margin: 50,
-    };
-    const Childdiv = {
-      height: "100%",
-      width: `${progress}%`,
-      backgroundColor: bgcolor,
-      borderRadius: 40,
-      textAlign: "right",
-    };
-    const progresstext = {
-      padding: 10,
-      color: "black",
-      fontWeight: 900,
-    };
-    return (
-      <div style={Parentdiv}>
-        <div style={Childdiv}>
-          <span style={progresstext}>{`${progress}%`} </span>
-        </div>
-      </div>
-    );
-  };
+const SKILLS = [
+  { type: "HTML", level: 100 },
+  { type: "CSS", level: 70 },
+  { type: "JavaScript", level: 45 },
+  { type: "BootStrap", level: 90 },
+  { type: "WordPress", level: 100 },
+  { type: "Elementor", level: 98 },
+  { type: "WooCommerce", level: 60 },
+  { type: "React.js", level: 25 },
+  { type: "PHP", level: 40 },
+];
+
+const container = {
+  height: 20,
+  width: "100%",
+  backgroundColor: "#fff",
+  borderRadius: 50,
+  margin: 50,
+};
+
+const label = {
+  // padding: "1rem",
+  color: "#000000",
+  display: "flex",
+  flexDirection: "row",
+  justifyContent: "space-between",
+};
+
+function ProgressBar() {
   return (
-    <div className="ProgressBar">
-      <h3 className="heading">Progress Bar</h3>
-      <ProgressBar bgcolor="orange" progress="30" height={30} />
-      <ProgressBar bgcolor="red" progress="60" height={30} />
-      <ProgressBar bgcolor="#99ff66" progress="50" height={30} />
-      <ProgressBar bgcolor="#ff00ff" progress="85" height={30} />
-      <ProgressBar bgcolor="#99ccff" progress="95" height={30} />
+    <div>
+      <ul style={{ listStyle: "none" }} className="skills">
+        {SKILLS.map((skill, index) => {
+          const bar = {
+            height: "100%",
+            width: `${skill.level}%`,
+            backgroundColor: "#90CAF9",
+            borderRadius: "inherit",
+            padding: "9px 20px ",
+          };
+
+          return (
+            <li key={skill.type}>
+              <div style={container}>
+                <div
+                  style={bar}
+                  role="progressbar"
+                  aria-valuenow={skill.level}
+                  aria-valuemin={0}
+                  aria-valuemax={100}
+                >
+                  <span style={label}>
+                    {" "}
+                    <div style={{ color: "#fff" }}>{`${skill.type}`}</div>
+                    <div style={{ color: "#fff" }}>{`${skill.level}%`}</div>
+                  </span>
+                </div>
+              </div>
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 }
+
+export default ProgressBar;
