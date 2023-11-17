@@ -1,5 +1,6 @@
 // import React, { useRef, props } from "react";
 import "./home.css";
+import ProgressBar from "../ProgressBar/ProgressBar";
 // Images and svg
 import Mansvg from "../../assets/man.svg";
 import Mishan from "../../assets/mishan.jpg";
@@ -93,34 +94,40 @@ export default function Home({ homeRef, infoRef, serviceRef, skillsRef }) {
           </div>
         </div>
       </div>
-
       <div className="Skills-Area" ref={skillsRef}>
         <div className="skillHeading">
-          <p className="TopHeading">Skills</p>
-          <h2 className="middleHeading">Why Choose me</h2>
-          <p className="Skills Des">
-            I’ve dedicated time and unwavering commitment to mastering my
-            skills, ensuring exceptional results. With a strong foundation and a
-            constant drive for improvement, I’m your expert of choice.
-          </p>
-        </div>
-        <div className="percentage">
-          <div className="leftsideper">
-            <div className="text">Html 100%</div>
-            <div className="text">CSS 95%</div>
-            <div className="text">JavaScript 45%</div>
-          </div>
-          <div className="Middlesideper">
-            <div className="text">Wordpress 100%</div>
-            <div className="text">Elementor 98%</div>
-            <div className="text">WooCommerce 45%</div>
-          </div>
-          <div className="Rightsideper">
-            <div className="text">Adobe Premiere 95%</div>
-            <div className="text">Content Writing 75%</div>
-            <div className="text">Fliming 70%</div>
+          <p className="SkillsTopHeading">Skills</p>
+          <h2 className="SkillsMiddleHeading">Why Choose me</h2>
+          <div className="Skills-Des">
+            <p>
+              I’ve dedicated time and unwavering commitment to mastering my
+              skills, ensuring exceptional results. With a strong foundation and
+              a constant drive for improvement, I’m your expert of choice.
+            </p>
           </div>
         </div>
+        <ProgressBar />
+        {/* <div className="percentage">
+        <div className="leftsideper">
+          <div className="leftsideText1">Html 100%</div>
+          <div className="reactjsdiv">
+            <span className="textreactjs">ReactJs</span>
+            <span className="reactpercentage">40%</span>
+          </div>
+          <div className="leftsideText2">CSS 95%</div>
+          <div className="leftsideText3">JavaScript 45%</div>
+        </div>
+        <div className="Middlesideper">
+          <div className="MiddlesideText1">Wordpress 100%</div>
+          <div className="MiddlesideText2">Elementor 98%</div>
+          <div className="MiddlesideText3">WooCommerce 45%</div>
+        </div>
+        <div className="Rightsideper">
+          <div className="RightsideText1">Adobe Premiere 95%</div>
+          <div className="RightsideText2">Content Writing 75%</div>
+          <div className="RightsideText3">Fliming 70%</div>
+        </div>
+      </div> */}
       </div>
       <div className="Footer">
         <p>Copyright 2023 Mishan Raj Shah</p>

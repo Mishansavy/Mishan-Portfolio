@@ -123,8 +123,7 @@
   color: var(--headingColor);
   font-family: var(--font);
 }
-.bottomHeading,
-.Skills-Des {
+.bottomHeading {
   font-size: 14px;
   line-height: 9px;
   /* letter-spacing: 2px; */
@@ -190,4 +189,83 @@
 }
 .skillHeading {
   text-align: center;
+}
+.Skills-Area {
+  width: 100%;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 400;
+  color: var(--SubHeadingColor);
+  font-family: var(--font);
+}
+.SkillHeading {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SkillsTopHeading {
+  font-size: 16px;
+  color: var(--SubHeadingColor);
+  line-height: 10px;
+  letter-spacing: 1px;
+  font-family: var(--font);
+}
+.SkillsMiddleHeading {
+  font-size: 30px;
+  line-height: 12px;
+  letter-spacing: 2px;
+  margin: 30px 0px;
+  color: var(--headingColor);
+  font-family: var(--font);
+}
+.Skills-Des {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+.Skills-Des p {
+  width: 60%;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--SubHeadingColor);
+  line-height: 25px;
+  letter-spacing: 0.39px;
+  font-family: var(--font);
+}
+.percentage {
+  display: flex;
+  /* gap: 20px; */
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+.leftsideper,
+.Middlesideper,
+.Rightsideper {
+  color: #fff;
+  padding: 10px 0px;
+}
+.leftsideText1,
+.leftsideText2,
+.leftsideText3,
+.MiddlesideText1,
+.MiddlesideText2,
+.MiddlesideText3,
+.RightsideText1,
+.RightsideText2,
+.RightsideText3 {
+  background-color: var(--BoxColor);
+  margin: 10px 0px;
+  padding: 10px;
+  width: 100%;
+}
+.leftsideText1 {
+  /* margin: 10px 0px; */
+}
+/* footer area  */
+.Footer {
+  text-align: center;
+  color: var(--SubHeadingColor);
+  font-size: 14px;
+  font-family: var(--font);
 }
