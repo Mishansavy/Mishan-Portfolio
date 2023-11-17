@@ -15,27 +15,36 @@
   flex-direction: column;
   align-items: start;
   justify-content: center;
-  height: 62vh;
+  height: 86vh;
 }
 .intro h1 {
   color: var(--headingColor);
-  font-family: "Roboto", Sans-serif;
+  font-family: var(--font);
   font-size: 74px;
   font-weight: 700;
   line-height: 10px;
   margin: 30px 0px;
 }
+.info-heading h1 {
+  font-family: var(--font);
+  line-height: 0px;
+}
+.info-heading p {
+  font-family: var(--font);
+}
 .intro p {
   color: var(--SubHeadingColor);
   font-size: 25px;
   font-weight: 500;
+  font-family: var(--font);
   line-height: 0px;
 }
 .intro-img img {
   width: 100%;
   height: 78vh;
 }
-.hire {
+.hire,
+.info-btn button {
   background-color: var(--ButtonOneColor);
   border: 0px solid var(--ButtonOneColor);
   color: #fff;
@@ -43,6 +52,7 @@
   font-weight: 500;
   padding: 10px 25px;
   margin: 10px;
+  font-family: var(--font);
 }
 .downloadcv {
   border-radius: 50px;
@@ -51,4 +61,217 @@
   color: #fff;
   border: 0px solid var(--ButtonTwoColor);
   background-color: var(--ButtonTwoColor);
+  font-family: var(--font);
+}
+.social-media-icons {
+  color: var(--ButtonOneColor);
+  padding: 10px;
+  margin: 10px 0px;
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+/* info code  */
+.info-area {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+}
+.info-image {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+.info-image img {
+  width: 60%;
+  height: 33vh;
+  filter: brightness(100%) contrast(100%) saturate(100%) blur(0px)
+    hue-rotate(0deg);
+  border-style: solid;
+  border-width: 4px 4px 4px 4px;
+  border-color: rgba(144, 167, 11, 0.671);
+  border-radius: 7px 7px 7px 7px;
+}
+.info-content {
+  width: 50%;
+}
+.info-des p {
+  color: var(--SubHeadingColor);
+  font-size: 16px;
+  line-height: 20px;
+  font-family: var(--font);
+}
+.service-area {
+  text-align: center;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.topHeading {
+  font-size: 16px;
+  color: var(--SubHeadingColor);
+  line-height: 10px;
+  letter-spacing: 1px;
+  font-family: var(--font);
+}
+.middleHeading {
+  font-size: 30px;
+  line-height: 12px;
+  letter-spacing: 2px;
+  margin: 30px 0px;
+  color: var(--headingColor);
+  font-family: var(--font);
+}
+.bottomHeading {
+  font-size: 14px;
+  line-height: 9px;
+  /* letter-spacing: 2px; */
+  font-weight: 400;
+  color: var(--SubHeadingColor);
+  font-family: var(--font);
+}
+.boxes {
+  display: flex;
+  justify-content: center;
+  font-family: var(--font);
+  gap: 25px;
+  margin: 55px 20px;
+  width: 60%;
+  height: 30vh;
+}
+.box-1,
+.box-2,
+.box-3 {
+  width: 100%;
+  height: 25vh;
+  /* margin: 20px;
+  padding: 20px; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  border: 1px solid #fff7f7;
+}
+
+.box-1 h2,
+.box-2 h2,
+.box-3 h2 {
+  font-size: 1.25rem;
+  text-align: center;
+}
+/* should apply the color and background-color property differently to work  */
+.box-1:hover .service-icon1,
+.box-1:hover h2 {
+  color: #fff;
+}
+.box-1:hover {
+  background-color: var(--BoxColor);
+  border-radius: 12px;
+}
+.box-2:hover .service-icon2,
+.box-2:hover h2 {
+  color: #fff;
+}
+.box-2:hover {
+  background-color: var(--BoxColor);
+  border-radius: 12px;
+}
+.box-3:hover .service-icon3,
+.box-3:hover h2 {
+  color: #fff;
+}
+.box-3:hover {
+  background-color: var(--BoxColor);
+  border-radius: 12px;
+}
+.service-icon1,
+.service-icon2,
+.service-icon3 {
+  color: var(--BoxColor);
+  font-size: 40px !important;
+}
+.skillHeading {
+  text-align: center;
+}
+.Skills-Area {
+  width: 100%;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 400;
+  color: var(--SubHeadingColor);
+  font-family: var(--font);
+}
+.SkillHeading {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SkillsTopHeading {
+  font-size: 16px;
+  color: var(--SubHeadingColor);
+  line-height: 10px;
+  letter-spacing: 1px;
+  font-family: var(--font);
+}
+.SkillsMiddleHeading {
+  font-size: 30px;
+  line-height: 12px;
+  letter-spacing: 2px;
+  margin: 30px 0px;
+  color: var(--headingColor);
+  font-family: var(--font);
+}
+.Skills-Des {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+.Skills-Des p {
+  width: 60%;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--SubHeadingColor);
+  line-height: 25px;
+  letter-spacing: 0.39px;
+  font-family: var(--font);
+}
+.percentage {
+  display: flex;
+  /* gap: 20px; */
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+.leftsideper,
+.Middlesideper,
+.Rightsideper {
+  color: #fff;
+  padding: 10px 0px;
+}
+.leftsideText1,
+.leftsideText2,
+.leftsideText3,
+.MiddlesideText1,
+.MiddlesideText2,
+.MiddlesideText3,
+.RightsideText1,
+.RightsideText2,
+.RightsideText3 {
+  background-color: var(--BoxColor);
+  margin: 10px 0px;
+  padding: 10px;
+  width: 100%;
+}
+.leftsideText1 {
+  /* margin: 10px 0px; */
+}
+/* footer area  */
+.Footer {
+  text-align: center;
+  color: var(--SubHeadingColor);
+  font-size: 14px;
+  font-family: var(--font);
 }
