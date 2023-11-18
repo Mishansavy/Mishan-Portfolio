@@ -7,7 +7,6 @@ const SKILLS = [
   { type: "BootStrap", level: 90 },
   { type: "WordPress", level: 100 },
   { type: "Elementor", level: 98 },
-  { type: "WooCommerce", level: 60 },
   { type: "React.js", level: 25 },
   { type: "PHP", level: 40 },
 ];
@@ -29,10 +28,12 @@ const label = {
 };
 
 function ProgressBar() {
+  const firstfourlist = SKILLS.slice(0, 4);
+  const secondfourlist = SKILLS.slice(4, 8);
   return (
-    <div>
-      <ul style={{ listStyle: "none" }} className="skills">
-        {SKILLS.map((skill, index) => {
+    <div className="progressbar">
+      <ul style={{ listStyle: "none", padding: "0px" }} className="skills">
+        {firstfourlist.map((skill, index) => {
           const bar = {
             height: "100%",
             width: `${skill.level}%`,
@@ -54,7 +55,38 @@ function ProgressBar() {
                   <span style={label}>
                     {" "}
                     <div style={{ color: "#fff" }}>{`${skill.type}`}</div>
-                    <div style={{ color: "#fff" }}>{`${skill.level}%`}</div>
+                    {/* <div style={{ color: "#fff" }}>{`${skill.level}%`}</div> */}
+                  </span>
+                </div>
+              </div>
+            </li>
+          );
+        })}
+      </ul>
+      <ul style={{ listStyle: "none", padding: "0px" }} className="skills">
+        {secondfourlist.map((skill, index) => {
+          const bar = {
+            height: "100%",
+            width: `${skill.level}%`,
+            backgroundColor: "#90CAF9",
+            borderRadius: "inherit",
+            padding: "9px 20px ",
+          };
+
+          return (
+            <li key={skill.type}>
+              <div style={container}>
+                <div
+                  style={bar}
+                  role="progressbar"
+                  aria-valuenow={skill.level}
+                  aria-valuemin={0}
+                  aria-valuemax={100}
+                >
+                  <span style={label}>
+                    {" "}
+                    <div style={{ color: "#fff" }}>{`${skill.type}`}</div>
+                    {/* <div style={{ color: "#fff" }}>{`${skill.level}%`}</div> */}
                   </span>
                 </div>
               </div>

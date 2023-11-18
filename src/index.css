@@ -1,8 +1,9 @@
-body {
-  padding: 20px;
+/* #root {
   margin: 20px;
-  box-sizing: border-box;
-  max-width: 1240px;
+} */
+body {
+  padding: 0px;
+  margin: 0px;
 }
 :root {
   --headingColor: #495057;
@@ -11,4 +12,85 @@ body {
   --ButtonTwoColor: #343a40;
   --font: "Roboto", sans-serif;
   --BoxColor: #ff7a57;
+}
+.progressbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+@media only screen and (min-width: 320px) and (max-width: 460px) {
+  .hero-section {
+    flex-direction: column;
+    height: 65vh;
+  }
+  .intro {
+    width: 100%;
+    display: block;
+    padding: 97px 25px;
+  }
+  .intro h1 {
+    font-size: 25px;
+    line-height: 0px;
+  }
+  .pweb {
+    width: 70%;
+    display: block;
+    margin: 30px 0px;
+  }
+  .phello p {
+    font-size: 16px;
+  }
+  .pweb p {
+    font-size: 20px;
+  }
+
+  .btn {
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: start;
+  }
+  .info-area {
+    flex-direction: column;
+    padding: 10px 25px;
+    width: 83%;
+  }
+  /* hidding imagee from into-image and adding the image in intro */
+  .intro-img {
+    display: none;
+  }
+  .intro {
+    background-image: url(./assets/man.svg);
+    background-repeat: no-repeat;
+    background-position: 64px 33px;
+    background-size: 292px auto;
+  }
+  .info-content {
+    width: 100%;
+  }
+  .info-image {
+    width: 100%;
+    margin: 10px 0px;
+  }
+  .info-image img {
+    width: 100%;
+  }
+  .boxes {
+    flex-direction: column;
+    margin: 120px 0px;
+  }
+  .Skills-Des {
+    width: 92%;
+    padding: 10px;
+  }
+  .Skills-Des p {
+    width: 100%;
+  }
+  .progressbar {
+    width: 100%;
+    display: inline-block;
+  }
+  .skills {
+    width: 50%;
+  }
 }

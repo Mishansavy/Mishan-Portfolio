@@ -19,19 +19,25 @@ export default function Home({ homeRef, infoRef, serviceRef, skillsRef }) {
     <div id="main">
       <div className="hero-section" ref={homeRef}>
         <div className="intro">
-          <p>Hello,I’m</p>
+          <span className="phello">
+            <p>Hello,I’m</p>
+          </span>
           <h1>Mishan Raj Shah</h1>
-          <p>Web Developer</p>
+          <span className="pweb">
+            <p>Web Developer</p>
+          </span>
           <div className="btn">
-            <button className="hire">Hire Me</button>
+            <but ton className="hire">
+              Hire Me
+            </but>
             <button className="downloadcv">Download CV</button>
+          </div>
             <div className="social-media-icons">
               <Facebook />
               <Twitter />
               <YouTube />
               <GitHub />
             </div>
-          </div>
         </div>
         <div className="intro-img">
           <img src={Mansvg} alt="" />
