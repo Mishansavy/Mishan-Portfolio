@@ -21,12 +21,12 @@ body {
 @media only screen and (min-width: 320px) and (max-width: 460px) {
   .hero-section {
     flex-direction: column;
-    height: 65vh;
+    height: 75vh;
   }
   .intro {
     width: 100%;
     display: block;
-    padding: 97px 25px;
+    padding: 55px 40px;
   }
   .intro h1 {
     font-size: 25px;
@@ -47,8 +47,8 @@ body {
   .btn {
     width: 100%;
     display: flex;
-    /* flex-direction: column; */
-    align-items: start;
+    align-items: end;
+    height: 27vh;
   }
   .info-area {
     flex-direction: column;
@@ -62,8 +62,8 @@ body {
   .intro {
     background-image: url(./assets/man.svg);
     background-repeat: no-repeat;
-    background-position: 64px 33px;
-    background-size: 292px auto;
+    background-position: 95px 80px;
+    background-size: 297px auto;
   }
   .info-content {
     width: 100%;
@@ -92,5 +92,21 @@ body {
   }
   .skills {
     width: 50%;
+  }
+  /* header responsive code  */
+  .heading {
+    padding: 10px 5px;
+  }
+  .menu {
+    justify-content: start;
+  }
+  .menu a {
+    font-size: 12px;
+    padding: 11px;
+  }
+  .heading img {
+    width: 55px;
+    height: 51px;
+    padding: 1px 27px;
   }
 }
